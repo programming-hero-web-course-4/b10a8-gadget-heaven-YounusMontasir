@@ -15,12 +15,12 @@ const Dashboard = () => {
 
     return (
        <div>
-         <div className='w-full  mx-auto bg-[#9538E2] pt-12 '>
-        <h1 className='text-white text-[56px] font-bold text-center w-full lg:w-9/12 mx-auto'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
+         <div className='w-full  mx-auto bg-[#9538E2] pt-12 pb-12'>
+        <h1 className='text-white text-[32px] font-bold text-center w-full mx-auto'>Dashboard </h1>
         <p className='text-white text-center w-full lg:w-6/12 mx-auto my-6'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-        <div className='flex justify-center'>
-            <button onClick={() => handleToggle(true)} className={`btn ${isToggle ? 'bg-black' : 'bg-green'}`}>Cart</button>
-            <button onClick={() => handleToggle(false)} className={`btn ${isToggle ? 'bg-green' : 'bg-black'}`}>Wishlist</button>
+        <div className='flex justify-center gap-6'>
+            <button onClick={() => handleToggle(true)} className={`btn rounded-full text-[18px] font-semibold px-8 ${isToggle ? 'bg-white text-[#9538E2] ' : 'bg-[#9538E2] text-white border-2 border-white'}`}>Cart</button>
+            <button onClick={() => handleToggle(false)} className={`btn rounded-full text-[18px] font-semibold px-7 ${isToggle ? 'bg-[#9538E2] text-white border-2 border-white' : 'bg-white text-[#9538E2]'}`}>Wishlist</button>
         </div>
           
         </div>

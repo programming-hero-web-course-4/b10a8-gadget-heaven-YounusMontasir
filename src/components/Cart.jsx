@@ -8,12 +8,12 @@ const Cart = ({cart}) => {
          <div className='flex gap-8 items-center'>
             <img className='w-[200px] h-[124px] object-cover' src={product_image} alt="" />
             <div>
-                <h3>{product_title}</h3>
-                <p>{description}</p>
-                <p>{price}</p>
+                <h3 className='text-2xl font-semibold'>{product_title}</h3>
+                <p className='text-[#09080F99] text-[18px] py-4'>{description}</p>
+                <p className='text-[#09080FCC] text-xl font-semibold'>Price: ${price}</p>
             </div>
         </div>
-        <button><MdDeleteForever /></button>
+        <button><MdDeleteForever className='h-5 w-5' /></button>
        </div>
     );
 };

@@ -41,19 +41,19 @@ const Gadgets = () => {
   return (
    <div>
     
-       <div className="w-10/12 mx-auto">
+       <div className="w-10/12 mx-auto mb-20">
        <h1 className="text-4xl font-bold text-center mb-12">
          Explore Cutting-Edge Gadgets
        </h1>
  
-       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 ">
+       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-20">
          {/* Category list */}
-         <div className="p-6 rounded-2xl border-2 border-gray-100">
+         <div className="p-6 rounded-2xl border-2 border-gray-100 ">
            {buttonTexts.map((text, index) => (
              <button
                onClick={() => handleCategory(text)}
                key={index}
-               className={`text-[18px] font-extrabold w-full p-6 rounded-full mb-6 ${color===text ? 'bg-[#9538E2] text-white' : 'bg-[#09080F0D] text-[#09080F99]'}`}
+               className={`text-[18px] font-extrabold w-full  p-6 rounded-full mb-6 ${color===text ? 'bg-[#9538E2] text-white' : 'bg-[#09080F0D] text-[#09080F99]'}`}
               //  className="text-[18px] font-medium text-[#09080F99] bg-[#09080F0D] w-full p-6 rounded-full mb-6"
              >
                {text}
