@@ -3,7 +3,7 @@ import React from 'react';
 const Statistics = () => {
     return (
         <div className='w-full'>
-            This is stat
+            dsf
         </div>
     );
 };

@@ -8,7 +8,7 @@ const Root = () => {
     return (
         <GadgetContext>
             <div className=' flex flex-col min-h-screen'>
-            <div className='mx-auto flex-grow'>
+            <div className=' flex-grow'>
             <Navbar></Navbar>
             <Outlet></Outlet>
             </div>
