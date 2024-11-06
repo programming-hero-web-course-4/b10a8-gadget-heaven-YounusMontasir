@@ -7,15 +7,14 @@ import { productContext } from '../Context/GadgetContext';
 const Navbar = () => {
   const {carts, wishlists} = useContext(productContext)
   const location = useLocation();
-  console.log(location.pathname);
-console.log(carts.length, wishlists.length);
+
 
   const navElement = (
     <>
       <li><NavLink to="/">Home</NavLink></li>
       <li><NavLink to="/statistics">Statistics</NavLink></li>
       <li><NavLink to="/dashboard">DashBoard</NavLink></li>
-      <li><NavLink to="/others">Others</NavLink></li>
+      <li><NavLink to="/others">About Us</NavLink></li>
     </>
   );
 

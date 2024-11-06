@@ -7,11 +7,13 @@ import { productContext } from "../Context/GadgetContext";
 const GadgetDetails = () => {
   const { productId } = useParams();
   const allData = useLoaderData();
+  console.log(allData);
+  
   const newProductId = parseInt(productId);
 
-  const { addToCart, addToWishlist ,isDisable} = useContext(productContext);
+  const { addToCart, addToWishlist ,disabledItems} = useContext(productContext);
 
-  const detailsData = allData.find((data) => data.product_id === newProductId);
+  const detailsData = allData?.find((data) => data.product_id === newProductId);
 
   const {
     product_id,
@@ -31,6 +33,7 @@ const GadgetDetails = () => {
   const handleWishlist = () => {
     addToWishlist(detailsData);
   };
+  
 
   return (
     <div className="w-full  mx-auto bg-[#9538E2] pt-12 pb-56 relative mb-[480px]">
@@ -45,7 +48,7 @@ const GadgetDetails = () => {
       <div class="hero bg-base-200  absolute w-full lg:w-10/12 rounded-3xl left-0 lg:left-32">
         <div class="flex flex-col lg:flex-row p-6 gap-8 w-full">
           <img
-            className="justify-start w-full  lg:w-1/3 rounded-3xl"
+            className="justify-start w-full object-cover  lg:w-1/3 rounded-3xl"
             src={product_image}
             class="max-w-sm rounded-lg shadow-2xl"
           />
@@ -110,7 +113,7 @@ const GadgetDetails = () => {
               <button
                 onClick={handleWishlist}
                 className=" btn p-4 rounded-full"
-                disabled={isDisable===true}
+                disabled={disabledItems[detailsData.product_id] || false} 
 
               >
                 <FaRegHeart />

@@ -4,6 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import { productContext } from '../Context/GadgetContext';
 import Carts from '../components/Carts';
 import Wishlists from '../components/Wishlists';
+import { Helmet } from 'react-helmet';
 
 
 const Dashboard = () => {
@@ -15,6 +16,13 @@ const Dashboard = () => {
 
     return (
        <div>
+         <Helmet>
+        <title>Dashboard | Gadget Heaven</title>
+        <meta
+          name="description"
+          content="Explore our selection of the latest gadgets and accessories at Gadget Heaven."
+        />
+      </Helmet>
          <div className='w-full  mx-auto bg-[#9538E2] pt-12 pb-12'>
         <h1 className='text-white text-[32px] font-bold text-center w-full mx-auto'>Dashboard </h1>
         <p className='text-white text-center w-full lg:w-6/12 mx-auto my-6'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
