@@ -9,7 +9,7 @@ const Banner = () => {
     }
     return (
         <div className='w-full lg:w-11/12 mx-auto bg-[#9538E2] pt-12 pb-56 relative mb-52 lg:mb-[480px]'>
-            <h1 className='text-white text-4xl lg:text-[56px] font-bold text-center w-full lg:w-9/12 mx-auto'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
+            <h1 className='text-white text-4xl lg:text-[56px] font-bold text-center w-full lg:w-9/12 mx-auto leading-[60px]'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
             <p className='text-white text-center w-full lg:w-6/12 mx-auto my-6'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
            <div className='flex justify-center'>
            <button onClick={handleShopNow} className='btn text-[#9538E2] text-center rounded-3xl font-bold '>Shop Now</button>

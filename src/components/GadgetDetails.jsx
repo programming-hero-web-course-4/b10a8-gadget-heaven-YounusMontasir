@@ -7,7 +7,7 @@ import { productContext } from "../Context/GadgetContext";
 const GadgetDetails = () => {
   const { productId } = useParams();
   const allData = useLoaderData();
-  console.log(allData);
+  
   
   const newProductId = parseInt(productId);
 

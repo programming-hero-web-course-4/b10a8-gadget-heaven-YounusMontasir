@@ -56,6 +56,23 @@ const GadgetContext = ({children}) => {
         setModalOpen(true)
     
     }
+    const handleDeleteCart = (id) =>{
+      
+      
+      const remainingCart = carts.filter(cart => cart.product_id !== id)
+      setCart( remainingCart)
+      toast.warning("Cart deleted")
+
+    }
+
+    const handleDeleteWishlist = (id) =>{
+      
+      
+      const remainingWishlist = wishlists.filter(wishlist => wishlist.product_id !== id)
+      setWishlist( remainingWishlist)
+      toast.warning("Wishlist deleted")
+
+    }
 
     const closeModal = () => {
         setModalOpen(false);
@@ -67,7 +84,7 @@ const GadgetContext = ({children}) => {
 
 
     return (
-        <productContext.Provider value={{carts, addToCart, wishlists, addToWishlist, amount, handleSort,handlePerchase, modalOpen,closeModal,disabledItems}}>
+        <productContext.Provider value={{carts, addToCart, wishlists, addToWishlist, amount, handleSort,handlePerchase, modalOpen,closeModal,disabledItems,handleDeleteWishlist,handleDeleteCart}}>
         {children}
         <ToastContainer 
         position='top-center'

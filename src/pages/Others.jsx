@@ -55,10 +55,9 @@ const Others = () => {
 <div class="hero bg-base-200  w-9/12 mx-auto rounded-xl">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <div class="text-center lg:text-left">
-      <h1 class="text-5xl font-bold">Login now!</h1>
+      <h1 class="text-5xl font-bold">Contact Us</h1>
       <p class="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      Have questions or need assistance? Reach out to us through our Contact Us form, and we'll be happy to help with any inquiries about our products or services!
       </p>
     </div>
     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
