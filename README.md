@@ -1,7 +1,7 @@
 # Gadget Heaven
 
 **Live Link:** [Gadget Heaven](https://gadget-heaven-gadget-shop.netlify.app/)
-**PDF Link:** [Requirements](https://drive.google.com/file/d/1ZoUkAmxE_R8CeZ3LOX9D03ZS8qzRWPrf/view?usp=sharing)
+**PDF Link:** [Requirements](https://drive.google.com/file/d/1Qz78vygMIqqyMXrhOEr1vov2YBmXmrPo/view?usp=sharing)
 
 ## Project Overview
 **Gadget Heaven** is a responsive e-commerce website for purchasing gadgets such as phones, laptops, smartwatches, and accessories. The project is built using React and leverages several core concepts and libraries to deliver a dynamic, interactive user experience.
