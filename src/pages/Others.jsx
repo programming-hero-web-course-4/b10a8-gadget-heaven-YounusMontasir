@@ -18,31 +18,41 @@ const Others = () => {
        
        </div>
             {/* Accordion */}
-<div>
-<div class="collapse collapse-arrow bg-base-200">
+<div className='w-9/12 mx-auto my-16 '>
+<h1 className='text-[#9538E2] font-bold text-5xl text-center mb-10'>Frequently Asked Question</h1>
+<div class="collapse collapse-arrow bg-base-200 mb-4 p-4">
   <input type="radio" name="my-accordion-2" checked="checked" />
-  <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="collapse-title text-2xl font-medium">What types of gadgets do you sell?</div>
   <div class="collapse-content">
-    <p>hello</p>
+    <p>At Gadget Heaven, we offer a wide range of gadgets, including phones, laptops, MacBooks, smartwatches, and various accessories to enhance your tech experience.</p>
   </div>
 </div>
-<div class="collapse collapse-arrow bg-base-200">
+<div class="collapse collapse-arrow bg-base-200 mb-4 p-4">
   <input type="radio" name="my-accordion-2" />
-  <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="collapse-title text-2xl font-medium">Do you provide warranties on your products?</div>
   <div class="collapse-content">
-    <p>hello</p>
+    <p>Yes, all our products come with a manufacturer’s warranty. The duration and terms depend on the specific gadget, and detailed warranty information is available on each product page.</p>
   </div>
 </div>
-<div class="collapse collapse-arrow bg-base-200">
+<div class="collapse collapse-arrow bg-base-200 mb-4 p-4">
   <input type="radio" name="my-accordion-2" />
-  <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="collapse-title text-2xl font-medium">How long does shipping usually take?</div>
   <div class="collapse-content">
-    <p>hello</p>
+    <p>We aim to deliver all orders within 3–7 business days, depending on your location. Once your order is shipped, you'll receive tracking information so you can follow its journey.</p>
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-200 mb-4 p-4">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-2xl font-medium">What is your return policy?</div>
+  <div class="collapse-content ">
+    <p>If you’re not satisfied with your purchase, you can return it within 30 days for a full refund, provided it’s in unused condition with all original packaging. Visit our Return Policy page for detailed instructions.</p>
   </div>
 </div>
 </div>
 {/* Login Form */}
-<div class="hero bg-base-200 min-h-screen">
+<div className='w-9/12 mx-auto my-16'>
+<h1 className='text-[#9538E2] font-bold text-5xl text-center mb-10'>Contact With Us</h1>
+<div class="hero bg-base-200  w-9/12 mx-auto rounded-xl">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <div class="text-center lg:text-left">
       <h1 class="text-5xl font-bold">Login now!</h1>
@@ -69,11 +79,12 @@ const Others = () => {
           </label>
         </div>
         <div class="form-control mt-6">
-          <button class="btn btn-primary">Login</button>
+          <button class="btn text-white font-semibold bg-[#9538E2]">Login</button>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>
         </div>
     );
